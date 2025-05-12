@@ -1,0 +1,6 @@
+{
+  "interestRate": 0.049,
+  "maxTerm": 72,
+  "minDownPayment": 0.1,
+  "maxDownPayment": 0.5
+} 

@@ -1,0 +1,48 @@
+{
+  "vehicles": [
+    {
+      "id": "1",
+      "model": "Corolla",
+      "year": 2023,
+      "price": 25000,
+      "mileage": 0,
+      "fuelType": "Gasolina",
+      "transmission": "Automático",
+      "color": "Blanco",
+      "features": [
+        "Cámara de reversa",
+        "Bluetooth",
+        "Control de crucero",
+        "Sensores de estacionamiento"
+      ],
+      "images": [
+        "/images/corolla-1.jpg",
+        "/images/corolla-2.jpg",
+        "/images/corolla-3.jpg"
+      ],
+      "description": "El Toyota Corolla 2023 combina eficiencia de combustible, confiabilidad y tecnología moderna en un sedán compacto elegante."
+    },
+    {
+      "id": "2",
+      "model": "RAV4",
+      "year": 2023,
+      "price": 32000,
+      "mileage": 0,
+      "fuelType": "Híbrido",
+      "transmission": "Automático",
+      "color": "Plata",
+      "features": [
+        "Sistema de tracción AWD",
+        "Pantalla táctil 8\"",
+        "Apple CarPlay",
+        "Android Auto"
+      ],
+      "images": [
+        "/images/rav4-1.jpg",
+        "/images/rav4-2.jpg",
+        "/images/rav4-3.jpg"
+      ],
+      "description": "El Toyota RAV4 2023 es un SUV compacto versátil que ofrece espacio, eficiencia y capacidad todoterreno."
+    }
+  ]
+} 
