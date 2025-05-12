@@ -1,22 +1,68 @@
 export interface Vehicle {
   id: string
-  model: string
+  name: string
+  type: 'new' | 'used'
   year: number
-  price: number
-  mileage: number
-  fuelType: string
-  transmission: string
-  color: string
-  features: string[]
+  price: {
+    base: number
+    currency: string
+  }
   images: string[]
+  features: string[]
   description: string
+  certified?: boolean
+  warranty?: string
 }
 
 export interface FinanceParams {
-  interestRate: number
-  maxTerm: number
-  minDownPayment: number
-  maxDownPayment: number
+  interestRates: {
+    new: number
+    used: number
+  }
+  additionalCosts: {
+    transferTax: number
+    insurance: number
+    registration: number
+    documentation: number
+  }
+  savingsPlan: {
+    minDownPayment: number
+    maxTerm: number
+    monthlyFee: number
+  }
+  branches: Branch[]
+  testDriveHours: string[]
+}
+
+export interface Branch {
+  id: string
+  name: string
+  address: string
+  phone: string
+}
+
+export interface TestDriveRequest {
+  name: string
+  phone: string
+  email: string
+  vehicleId: string
+  branchId: string
+  preferredDate: string
+  preferredTime: string
+}
+
+export interface FinanceCalculation {
+  vehiclePrice: number
+  downPayment: number
+  term: number
+  monthlyPayment: number
+  totalCost: number
+  additionalCosts: {
+    transferTax: number
+    insurance: number
+    registration: number
+    documentation: number
+  }
 }
 
 export interface TestDriveFormData {

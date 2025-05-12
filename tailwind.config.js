@@ -8,12 +8,10 @@ export default {
     extend: {
       colors: {
         'toyota-red': '#EB0A1E',
+        'toyota-red-dark': '#C00918',
         'toyota-gray': '#333333',
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/aspect-ratio'),
-  ],
+  plugins: [],
 } 

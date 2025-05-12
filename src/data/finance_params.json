@@ -1,6 +1,41 @@
 {
-  "interestRate": 0.049,
-  "maxTerm": 72,
-  "minDownPayment": 0.1,
-  "maxDownPayment": 0.5
+  "interestRates": {
+    "new": 0.12,
+    "used": 0.15
+  },
+  "additionalCosts": {
+    "transferTax": 0.03,
+    "insurance": 0.02,
+    "registration": 0.01,
+    "documentation": 0.005
+  },
+  "savingsPlan": {
+    "minDownPayment": 0.20,
+    "maxTerm": 60,
+    "monthlyFee": 0.015
+  },
+  "branches": [
+    {
+      "id": "kansai-centro",
+      "name": "Kansai Centro",
+      "address": "Av. Rivadavia 5000",
+      "phone": "011-1234-5678"
+    },
+    {
+      "id": "kansai-norte",
+      "name": "Kansai Norte",
+      "address": "Av. del Libertador 8000",
+      "phone": "011-8765-4321"
+    }
+  ],
+  "testDriveHours": [
+    "09:00",
+    "10:00",
+    "11:00",
+    "12:00",
+    "14:00",
+    "15:00",
+    "16:00",
+    "17:00"
+  ]
 } 

@@ -1,24 +1,32 @@
-import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import VehicleList from './pages/VehicleList'
-import VehicleDetail from './pages/VehicleDetail'
-import FinanceCalculator from './pages/FinanceCalculator'
-import TestDriveForm from './pages/TestDriveForm'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
+import Navbar from './components/Navbar';
+import LoadingSpinner from './components/LoadingSpinner';
+
+// Lazy load pages for better performance
+const Home = lazy(() => import('./pages/Home'));
+const VehicleDetail = lazy(() => import('./pages/VehicleDetail'));
+const FinanceCalculator = lazy(() => import('./pages/FinanceCalculator'));
+const TestDrive = lazy(() => import('./pages/TestDrive'));
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100">
-      <Navbar />
-      <main className="container mx-auto px-4 py-8">
-        <Routes>
-          <Route path="/" element={<VehicleList />} />
-          <Route path="/vehicle/:id" element={<VehicleDetail />} />
-          <Route path="/finance" element={<FinanceCalculator />} />
-          <Route path="/test-drive" element={<TestDriveForm />} />
-        </Routes>
-      </main>
-    </div>
-  )
+    <Router>
+      <div className="min-h-screen bg-gray-50">
+        <Navbar />
+        <main className="container mx-auto px-4 py-8">
+          <Suspense fallback={<LoadingSpinner />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/vehicle/:id" element={<VehicleDetail />} />
+              <Route path="/vehicle/:id/finance" element={<FinanceCalculator />} />
+              <Route path="/vehicle/:id/test-drive" element={<TestDrive />} />
+            </Routes>
+          </Suspense>
+        </main>
+      </div>
+    </Router>
+  );
 }
 
-export default App 
+export default App; 
