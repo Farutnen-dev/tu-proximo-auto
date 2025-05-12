@@ -10,9 +10,9 @@
         "currency": "ARS"
       },
       "images": [
-        "/assets/yaris-1.jpg",
-        "/assets/yaris-2.jpg",
-        "/assets/yaris-3.jpg"
+        "/vehicles/Toyota-yaris-2024-1.jpg",
+        "/vehicles/Toyota-yaris-2024-2.jpg",
+        "/vehicles/Toyota-yaris-2024-3.jpg"
       ],
       "features": [
         "Motor 1.5L",
@@ -33,9 +33,9 @@
         "currency": "ARS"
       },
       "images": [
-        "/assets/corolla-1.jpg",
-        "/assets/corolla-2.jpg",
-        "/assets/corolla-3.jpg"
+        "/vehicles/Toyota-corolla-2024-1.jpg",
+        "/vehicles/Toyota-corolla-2024-2.jpg",
+        "/vehicles/Toyota-corolla-2024-3.jpg"
       ],
       "features": [
         "Motor 2.0L",
@@ -58,9 +58,9 @@
         "currency": "ARS"
       },
       "images": [
-        "/assets/hilux-1.jpg",
-        "/assets/hilux-2.jpg",
-        "/assets/hilux-3.jpg"
+        "/vehicles/Toyota-hilux-2024-1.png",
+        "/vehicles/Toyota-hilux-2024-2.png",
+        "/vehicles/Toyota-hilux-2024-3.jpg"
       ],
       "features": [
         "Motor 2.8L Turbo Diesel",
